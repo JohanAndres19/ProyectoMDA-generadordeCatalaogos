@@ -59,3 +59,7 @@
 
     #### El diagrama que representa el  modelo  general de clases que se sigue el proyecto es:
     ![Diagrama De Clase](images/BuildTemplateClassDiagram.svg)
+
+2) ### Generador de Codigo
+   
+    #### Para la generacion de codigo se hace uso de la herramienta yeoman
