@@ -1,0 +1,82 @@
+name: catalogo
+structures: 
+  Item: 
+    TipoItem: [Libro,NovelaGrafica,AudioLibro]
+    Nombre: 
+    Description:
+    Fecha:
+    Autor:
+  Coleccion: 
+    NombreSaga:
+    Cantidad:
+    Autor:
+    Components:
+  SuperColeccion:
+    Genero:
+    Colecciones:
+values:
+  Items:
+    structure: Item
+    I1:
+      TipoItem: Libro      
+      Nombre: Haryy Potter y la Piedra Filosofal
+      Description:
+        Novela crada pajsdflahdflhadkjfhkjasdhfkasdjfajdfkajlfhdkajksdf
+      Fecha: 26 de junio de 1997
+      Autor: J. K. Rowling
+    I2:
+      TipoItem: Libro      
+      Nombre: Haryy Potter y la camara de los secretos
+      Description:
+        Novela crada pajsdflahdflhadkjfhkjasdhfkasdjfajdfkajlfhdkajksdf
+      Fecha: 26 de junio de 1997
+      Autor: J. K. Rowling
+    I3:
+      TipoItem: Libro      
+      Nombre: 50 Sombras de grey
+      Description:
+        Novela crada pajsdflahdflhadkjfhkjasdhfkasdjfajdfkajlfhdkajksdf
+      Fecha: 2011
+      Autor: E. L. James
+    I4:
+      TipoItem: Libro
+      Nombre: El Señor de los Añillos la Comunidad del Anillo
+      Description:
+        Labore sit occaecat ipsum tempor ullamco eiusmod. Pariatur sint amet esse dolore tempor ullamco irure id eiusmod qui commodo non. Ex consequat est aute aute ut amet pariatur esse amet cupidatat. Dolore ullamco excepteur et irure irure id ex aliqua sit. Lorem aute officia nisi aliquip dolore velit duis amet proident minim. Elit irure consequat adipisicing aliquip excepteur ut dolor esse.
+      Fecha: 29 de julio de 1954
+      Autor: J. R. R. Tolkien
+    I5:
+      TipoItem: Libro
+      Nombre: El Señor de los Anillos las Dos Torres
+      Description:
+        Lorem commodo in veniam labore duis laborum cupidatat cillum ex quis. Cupidatat veniam qui ullamco aliquip aliquip anim eu elit labore cillum magna tempor eu labore. Qui quis est veniam officia mollit ex minim. Exercitation anim qui cillum esse non velit qui. Commodo in in aute ullamco voluptate.
+      Fecha: 11 de noviembre de 1954
+      Autor: J. R. R. Tolkien
+    I6:
+      TipoItem: Libro
+      Nombre: El Señor de los Añillos El retorno del Rey
+      Description:
+        In consequat sint veniam amet exercitation. Ut deserunt duis eu est. Pariatur aliqua ad tempor duis.
+      Fecha: 20 de octubre de 1955
+      Autor: J. R. R. Tolkien
+  Colecciones:
+    structure: Coleccion
+    C1:
+      NombreSaga: Harry Potter
+      Cantidad: 7
+      Autor: J. K. Rowling
+      Components: [I1,I2]    
+    C2:
+      NombreSaga: El Señor de los Añillos
+      Cantidad: 3
+      Autor: J. R. R. Tolkien
+      Components: [I4,I5,I6]
+  SuperColecciones:
+    structure: SuperColeccion
+    S1:
+      Genero: Fantasia
+      Colecciones: [C1,C2]
+Filtros:
+  FiltroItem: [Autor,Fecha]
+  FiltroColeccion: [Autor]
+  FiltroSColeccion: [Genero]
