@@ -28,7 +28,7 @@ abstract class Compuesto implements Component {
   
   static List<Component>? getComponentesJson(var a)=>a;
   
-  static dynamic toJsonComponentes(var a) => a;  
+  static dynamic toJsonComponentes(var a) => a.map((e)=>e.toJson()).toList();  
   
 
   @override

@@ -34,7 +34,7 @@ class BuilderCatalogoConcreto<Object> extends BuilderCatalogo {
           if(element=='items'){
             catalogoJson['componentes'][element][j.keys.toList()[0]]=j[j.keys.toList()[0]].toJson();
           }else{
-            catalogoJson['componentes'][element][j.keys.toList()[0]]=j[j.keys.toList()[0]].toJson()['array'];
+            catalogoJson['componentes'][element][j.keys.toList()[0]]=j[j.keys.toList()[0]].toJson();
           }
         }
     }

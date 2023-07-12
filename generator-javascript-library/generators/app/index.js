@@ -43,7 +43,7 @@ module.exports = class extends Generator {
       this.destinationRoot(projectPath);
 
       // Lee el archivo JSON
-      const jsonPath2 = path.join('src', answers.jsonPath);
+      const jsonPath2 = path.join(answers.jsonPath);
       jsonfile.readFile(path.join(jsonPath2), (err, data) => {
         if (err) {
           this.log.error('Error al leer el archivo JSON:', err);
